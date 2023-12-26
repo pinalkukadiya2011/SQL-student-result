@@ -1,0 +1,39 @@
+<form method="post">
+    <table>
+        <tr>
+            <th>
+                STUDENT RESULT
+            </th>
+        </tr>
+        <% results.forEach(function(stu1){%>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value="<%=stu1.name %>" placeholder="ENTER THE NAME"/> </td>
+        </tr>
+        <tr>
+            <td>sub 1</td>
+            <td><input type="int" name="sub1" value="<%=stu1.sub1 %>" placeholder="ENTER THE SUB 1"/> </td>
+        </tr> 
+        <tr>
+            <td>sub 2</td>
+            <td><input type="int" name="sub2" value="<%=stu1.sub2 %>" placeholder="ENTER THE SUB 2"/> </td>
+        </tr>
+        <tr>
+            <td>sub 3</td>
+            <td><input type="int" name="sub3" value="<%=stu1.sub3 %>" placeholder="ENTER THE SUB 3"/> </td>
+        </tr>
+        <tr>
+            <td>sub 4</td>
+            <td><input type="int" name="sub4" value="<%=stu1.sub4 %>" placeholder="ENTER THE SUB 4"/> </td>
+        </tr>
+        <tr>
+            <td>sub 5</td>
+            <td><input type="int" name="sub5" value="<%=stu1.sub5 %>" placeholder="ENTER THE SUB 5"/> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit"/> </td>
+        </tr>
+        <% }) %>
+    </table>
+</form>

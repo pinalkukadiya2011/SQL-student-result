@@ -1,0 +1,48 @@
+<table border="4">
+    <tr>
+        <th colspan="15">
+            INFORMATION
+        </th>
+    </tr>
+    <tr>
+        <th>ROLL NO</th>
+        <th>NAME</th>
+        <th>SUB 1</th>
+        <th>SUB 2</th>
+        <th>SUB 3</th>
+        <th>SUB 4</th>
+        <th>SUB 5</th>
+        <th>TOTAL</th>
+        <th>AVG</th>
+        <th>MAX</th>
+        <th>MIN</th>
+        <th>STATUS</th>
+        <th>ACTION</th>
+        <th>ACTION</th>
+       
+    </tr>
+<% results.forEach(function(stu1){%>
+
+    <tr>
+      <td><%= stu1.r_no %></td>
+      <td><%= stu1.name %></td>
+      <td><%= stu1.sub1 %></td>
+      <td><%= stu1.sub2 %></td>
+      <td><%= stu1.sub3%></td>
+      <td><%= stu1.sub4%></td>
+      <td><%= stu1.sub5%></td>
+      <td><%= stu1.total%></td>
+      <td><%= stu1.avg%></td>
+      <td><%= stu1.max%></td>
+      <td><%= stu1.min%></td>
+      <td><%= stu1.status%></td>
+      <td><a href="/delete/<%= stu1.r_no%>">DELETE</a></td>
+      <td><a href="/update/<%= stu1.r_no%>">UPDATE</a></td>
+    </tr>
+
+
+
+<% }) %>
+
+
+</table>
