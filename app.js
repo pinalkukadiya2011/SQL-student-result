@@ -97,14 +97,6 @@ app.post('/' ,function(req,res){
   else if(temp==3 || temp==2){
     status="ATKT";
   }
-
-//   else if(( sub1<33 && sub2<33 && sub3<33 && sub4<33 && sub5<33) || (sub1<33 && sub2<33 && sub3<33 && sub4<33)||
-//   (sub2<33 && sub3<33 && sub4<33 && sub5<33 ) || (sub3<33 && sub4<33 && sub5<33 && sub1<33) ||
-//   (sub4<33 && sub5<33 && sub1<33 && sub2<33 ) ||(sub5<33 && sub1<33 && sub2<33 &&  sub3<33 ))
-// {
-//   status="FAIL";
-
-// }
 else{
   status="FAIL";
 }
@@ -204,16 +196,10 @@ var temp=0;
   else if(temp==3 || temp==2){
     status="ATKT";
   }
-
-  // else if(( sub1<33 && sub2<33 && sub3<33 && sub4<33 && sub5<33) || (sub1<33 && sub2<33 && sub3<33 && sub4<33)||
-  //     (sub2<33 && sub3<33 && sub4<33 && sub5<33 ) || (sub3<33 && sub4<33 && sub5<33 && sub1<33) ||
-  //     (sub4<33 && sub5<33 && sub1<33 && sub2<33 ) ||(sub5<33 && sub1<33 && sub2<33 && sub3<33 ))
-  //     {
-  //     status="FAIL";
-  //   }
-else{
-  status="ATKT";
-}
+   else{
+    status="FAIL";
+   }
+  
 
   
   var update = "update stu_res SET  name='"+name+"',sub1='"+sub1+"',sub2='"+sub2+"',sub3='"+sub3+"',sub4='"+sub4+"',sub5='"+sub5+"', total='"+total+"', avg='"+avg+"',max='"+max+"',min='"+min+"',status='"+status+"' WHERE r_no="+r_no;
